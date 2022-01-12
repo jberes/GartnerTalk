@@ -1,0 +1,77 @@
+<div class="people-home column">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <igx-icon family="material" class="icon content">menu</igx-icon>
+    </igx-navbar-action>
+    <ng-container>
+      <igx-icon family="material" class="icon">add</igx-icon>
+    </ng-container>
+    <igx-navbar-title>Viewing David Cardale</igx-navbar-title>
+  </igx-navbar>
+  <div class="group row">
+    <div class="people-list column">
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Name</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Peter Cologne</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Adam Thiel</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Amanda Cruz</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Veronica Christensen</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Anne Marie Ferguson</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Jayden Christopher</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+    <div class="people-details column">
+      <div class="information column">
+        <div class="avatar-rank column">
+          <igx-avatar src="/assets/349e1f7524e843a0851219131d9e87eafab4c2e9.png" [roundShape]="true" size="large" class="avatar"></igx-avatar>
+          <igx-badge type="primary" value="65" class="rank"></igx-badge>
+        </div>
+        <div class="name-admin row">
+          <p class="igx-typography__body-1 name">Name</p>
+          <div class="pin-right column">
+            <igx-badge type="primary" value="Admin" class="admin-badge"></igx-badge>
+          </div>
+        </div>
+        <p class="igx-typography__body-2 gender-birthday">Gender - Birthdate</p>
+      </div>
+      <button igxButton="fab" igxRipple routerLink="/add-person" class="edit">
+        <igx-icon>edit</igx-icon>
+      </button>
+    </div>
+  </div>
+</div>

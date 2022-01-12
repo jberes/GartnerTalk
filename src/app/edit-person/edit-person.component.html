@@ -1,0 +1,100 @@
+<div class="edit-person column">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <igx-icon family="material" class="icon content_1">menu</igx-icon>
+    </igx-navbar-action>
+    <ng-container>
+      <igx-icon family="material" class="icon">add</igx-icon>
+    </ng-container>
+    <igx-navbar-title>Editing David Cardale</igx-navbar-title>
+  </igx-navbar>
+  <div class="group row">
+    <div class="people-list column">
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>David Cardale</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Peter Cologne</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Adam Thiel</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Amanda Cruz</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Veronica Christensen</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Anne Marie Ferguson</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="content_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Jayden Christopher</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+    <div class="people-edit column">
+      <div class="content column">
+        <div class="file-upload column">
+          <igx-avatar icon="account_circle" [roundShape]="true" size="large" class="avatar"></igx-avatar>
+          <button igxButton="icon" igxRipple class="button">
+            <igx-icon>add</igx-icon>
+          </button>
+        </div>
+        <igx-input-group type="line" class="user-input">
+          <igx-prefix>
+            <div class="prefix-container column">
+              <igx-icon family="material" class="icon content_1">account_circle</igx-icon>
+            </div>
+          </igx-prefix>
+          <input type="text" placeholder="Placeholder" igxInput />
+          <label igxLabel>Name</label>
+        </igx-input-group>
+        <igx-date-picker [displayMonthsCount]="1" mode="dropdown" class="user-input"></igx-date-picker>
+        <igx-radio-group class="gender">
+          <igx-radio class="radio">Male</igx-radio>
+          <igx-radio class="radio">Female</igx-radio>
+        </igx-radio-group>
+        <div class="ranking-group row">
+          <p class="igx-typography__body-1 rank-text">Ranking</p>
+          <igx-slider [value]="0" type="slider" [continuous]="true" tickLabelsOrientation="horizontal" [minValue]="0" [maxValue]="100" class="rank"></igx-slider>
+        </div>
+        <igx-checkbox labelPosition="after" class="is-admin">Is Admin</igx-checkbox>
+        <div class="buttons row">
+          <button igxButton="raised" igxRipple class="button_1">SAVE</button>
+          <button igxButton="raised" igxRipple class="button_1">CANCEL</button>
+          <button igxButton="raised" igxRipple class="button_1">DELETE</button>
+        </div>
+      </div>
+      <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" class="dialog">
+        <ng-container>
+          <div class="body column">
+            <p class="igx-typography__body-1 text">Are you sure you want to delete this person?</p>
+          </div>
+        </ng-container>
+      </igx-dialog>
+    </div>
+  </div>
+</div>

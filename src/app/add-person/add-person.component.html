@@ -1,0 +1,102 @@
+<div class="add-person column">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <igx-icon family="material" class="icon">menu</igx-icon>
+    </igx-navbar-action>
+    <ng-container></ng-container>
+    <igx-navbar-title>Adding Person</igx-navbar-title>
+  </igx-navbar>
+  <div class="group row">
+    <div class="people-list column">
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>David Cardale</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Peter Cologne</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Adam Thiel</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Amanda Cruz</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Veronica Christensen</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Anne Marie Ferguson</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar src="/assets/53c4f9a7b7f5f730460a0235b717b99679251327.png" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Jayden Christopher</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+    <div class="people-add column">
+      <div class="content column">
+        <div class="file-upload column">
+          <igx-avatar icon="account_circle" [roundShape]="true" size="large" class="avatar"></igx-avatar>
+          <button igxButton="icon" igxRipple class="button">
+            <igx-icon>add</igx-icon>
+          </button>
+        </div>
+        <igx-input-group type="line" class="user-input">
+          <igx-prefix>
+            <div class="prefix-container column">
+              <igx-icon family="material" class="icon">account_circle</igx-icon>
+            </div>
+          </igx-prefix>
+          <input type="text" placeholder="e.g. John Doe" igxInput />
+          <label igxLabel>Name</label>
+        </igx-input-group>
+        <igx-date-picker [displayMonthsCount]="1" mode="dropdown" class="user-input"></igx-date-picker>
+        <igx-radio-group class="gender">
+          <igx-radio class="radio">Male</igx-radio>
+          <igx-radio class="radio">Female</igx-radio>
+        </igx-radio-group>
+        <div class="ranking-group row">
+          <p class="igx-typography__body-1 rank-text">Ranking</p>
+          <igx-slider [value]="0" type="slider" [continuous]="true" tickLabelsOrientation="horizontal" [minValue]="0" [maxValue]="100" class="rank"></igx-slider>
+        </div>
+        <igx-checkbox labelPosition="after" class="is-admin">Is Admin</igx-checkbox>
+        <div class="buttons row">
+          <button igxButton="raised" igxRipple class="button_1">SAVE</button>
+          <button igxButton="raised" igxRipple class="button_1">CANCEL</button>
+        </div>
+      </div>
+      <igx-grid [data]="northwindCustomers" primaryKey="customerID" [autoGenerate]="false" displayDensity="cosy" width="100%" height="400px" class="grid">
+        <igx-column header="customerID" field="customerID" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="customerID" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="companyName" field="companyName" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="companyName" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="contactName" field="contactName" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="contactName" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="contactTitle" field="contactTitle" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="contactTitle" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="street" field="address.street" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.street" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="city" field="address.city" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.city" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="region" field="address.region" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.region" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.postalCode" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="country" field="address.country" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.country" [disablePinning]="false" [disableHiding]="false"></igx-column>
+        <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" [filterable]="true" [searchable]="true" [selectable]="true" title="address.phone" [disablePinning]="false" [disableHiding]="false"></igx-column>
+      </igx-grid>
+    </div>
+  </div>
+</div>

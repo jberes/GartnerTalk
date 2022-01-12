@@ -1,0 +1,135 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+.pin-right {
+  position: absolute;
+  width: 49px;
+  height: 22px;
+  min-width: 49px;
+  min-height: 22px;
+  top: calc(33% - 7px);
+  right: 0;
+}
+.people-list {
+  width: 268px;
+  height: 392px;
+  min-width: 268px;
+  min-height: 392px;
+  position: relative;
+}
+.people-details {
+  width: calc(100% - 268px);
+  min-width: 457px;
+  align-items: center;
+  background-color: rgba(170, 221, 255, 0.5800000000000001);
+  justify-content: center;
+  height: 100%;
+  min-height: 564px;
+  position: relative;
+}
+.information {
+  width: 115px;
+  height: 153px;
+  min-width: 115px;
+  min-height: 153px;
+  justify-content: space-between;
+  position: relative;
+}
+.avatar-rank {
+  width: 96px;
+  height: 92px;
+  min-width: 96px;
+  min-height: 92px;
+  margin: 0 10px;
+  padding: 0 8px 0 0;
+  justify-content: center;
+  position: relative;
+}
+.name-admin {
+  width: 108px;
+  height: 28px;
+  min-width: 108px;
+  min-height: 28px;
+  margin: 0 8px 0 0;
+  position: relative;
+}
+.name {
+  width: 40%;
+  min-width: 48px;
+  height: max-content;
+  color: rgba(0, 0, 0, 0.8657155797101449);
+  position: relative;
+}
+.group {
+  height: calc(100% - 56px);
+  min-width: 725px;
+  min-height: 564px;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.gender-birthday {
+  min-width: 132px;
+  height: max-content;
+  color: rgba(0, 0, 0, 0.8657155797101449);
+  width: 100%;
+  position: relative;
+}
+.people-home {
+  min-height: 620px;
+  height: 100%;
+  min-width: 725px;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+.avatar {
+  margin: 0 0 0 -8px;
+  position: relative;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.content {
+  position: relative;
+}
+.list {
+  position: relative;
+  width: 268px;
+}
+.rank {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.admin-badge {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+.edit {
+  right: 16px;
+  bottom: 16px;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
